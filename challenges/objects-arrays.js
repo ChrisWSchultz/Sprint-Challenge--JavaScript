@@ -95,7 +95,8 @@ graduates.forEach((element) => {
 
 console.log(contactInfo);
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+/* Request 3: Find out how many universities have the string "Uni" included in their name.
+Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
 graduates.forEach((element) => {
   if(element.university.includes("Uni")) {
@@ -107,7 +108,8 @@ console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
 
-// Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
+// Given this zoo data from around the United States, follow the instructions below.
+// Use the specific array methods in the requests below to solve the problems.
 
 const zooAnimals = [
   { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
@@ -160,7 +162,10 @@ console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
-The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
+The zoos need to know their total animal population across the United States.
+Find the total population from all the zoos using the .reduce() method.
+Remember the reduce method takes two arguments:
+a callback (which itself takes two args), and an initial value for the count.
 
 */
 const populationTotal = zooAnimals.reduce( (total, current) => { return total + current.population; }, 0);
