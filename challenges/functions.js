@@ -39,10 +39,8 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation:
-/*  nestedFunction has access to the variables in scopes above it. Lexical scoping.
+// nestedFunction has access to the variables in scopes above it. Lexical scoping.
 
-
-*/
 
 const external = "I'm outside the function";
 
